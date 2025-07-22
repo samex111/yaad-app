@@ -4,7 +4,7 @@ import jwt from "jsonwebtoken"
 
 export function userMiddleware(req:Request, res:Response, next:NextFunction){
 const header = req.headers["authorization"];
-const decoded = jwt.verify(header as string, "menhibatunga" );
+const decoded = jwt.verify(header as string, "mesiniordeveloperbnaunga" );
 if(decoded){
   // @ts-ignore
         req.userId = decoded.id;
